@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-
+:root {
+    --blue: #343F4F;
+    --red: #FC6D6D;
+    --green:#2aaf76;
+  }
 
 * {
     margin: 0;
@@ -24,7 +28,7 @@ body {
 .first-page {
     width: 100%;
     min-height: 100vh;
-    background: #343F4F;
+    background: var(--blue);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +36,7 @@ body {
 }
 
 .first-page i {
-    color: #2aaf76;
+    color: var(--green);
     font-size: 40px;
 }
 
@@ -60,7 +64,7 @@ body {
 
 .dynamic-txts li {
     list-style: none;
-    color: #FC6D6D;
+    color: var(--red);
     font-size: 60px;
     font-weight: 500;
     position: relative;
@@ -86,8 +90,8 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: #343F4F;
-    border-left: 2px solid #FC6D6D;
+    background: var(--blue);
+    border-left: 2px solid var(--red);
     animation: typing 3s steps(10) infinite;
 }
 
@@ -113,20 +117,20 @@ body {
 }
 
 .about-me a{
-    color: #FC6D6D;
+    color: var(--red);
 }
 
 .about-me a:hover{
-    color: #343F4F;
+    color: var(--blue);
 }
 
 .about h1{
-    color: #2aaf76;
+    color: var(--green);
     padding-bottom: 20px;
 }
 
 .about p{
-    color: #343F4F;
+    color: var(--blue);
 }
 
 .about{
@@ -185,11 +189,11 @@ body {
 
 .resume .col .title{
     font-size: 25px;
-    color: #343F4F;
+    color: var(--blue);
 }
 
 .resume h1{
-    color: #2aaf76;
+    color: var(--green);
     padding-bottom: 20px;
 }
 
@@ -212,7 +216,7 @@ body {
 }
 
 .resume .col .job-title{
-    color: #2aaf76;
+    color: var(--green);
     font-size: 15px;
 }
 
@@ -227,14 +231,14 @@ body {
 
   .progressbar2 .myProgress {
     width: 100%;
-    background-color: #2aaf768f;
+    background-color: var(--green)8f;
     border-radius: 17px;
   }
   
   .progressbar2 .myBar {
     width: 0%;
     height: 30px;
-    background: #2aaf76;
+    background: var(--green);
     border-radius: 17px;
   }
 
@@ -244,19 +248,19 @@ body {
     background: #2aaf768f;
     border: 1px solid #2aaf768f;
     border-radius: 5px;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .progress-bar {
     height: 20px;
-    background-color: #2aaf76;
+    background-color: var(--green);
     width: 0%;
     border-radius: 5px;
     transition: width 0.6s ease;
 }
 
 .progress-title{
-    font-size: 20px;
+    font-size: 15px;
     color: #F85C70;
     margin: 10px 0 5px;
 }
@@ -267,7 +271,7 @@ body {
 }
 
 .references h1 {
-    color: #2aaf76;
+    color: var(--green);
     padding-bottom: 20px;
 }
 
@@ -278,10 +282,57 @@ body {
 }
 
 .references p {
-    color: #343F4F;
+    color: var(--blue);
 }
 
+.ref-div{
+    display: flex;
+    gap: 50px;
+    padding: 0 30px;
+}
+
+.contact{
+    margin: 50px 30px;
+}
+
+.contact .line{
+    display: block;
+    width: 25px;
+    height: 1.5px;
+    background-color: #F85C70;
+    margin: 5px 0;
+}
+
+.contact .card-link{
+    color: var(--green);
+    text-decoration: none;
+    margin-left: 0;
+}
+
+.contact .card-link i{
+    margin-right: 10px;
+}
+
+.contact .card-link:hover{
+    color: var(--red);
+}
+
+footer{
+    background: var(--blue);
+    width: 100%;
+    
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width:768px){
+    .ref-div{
+        flex-direction: column;
+        padding: 0 0;
+    }
     .wrapper .dynamic-txts {
         height: 74px;
         line-height: 70px;
